@@ -8,7 +8,7 @@ const Hero = () => {
 
     return (
         <div className='relative text-white min-h-screen md:max-h-screen flex justify-center flex-col items-center' style={{ backgroundImage: `url(/background.png)`, backgroundSize: "cover", backgroundPosition: "center" }}>
-            <div className='h-full flex flex-col items-center md:mt-48'>
+            <div className='h-full flex flex-col items-center my-16 md:my-0 md:mt-48'>
                 <div>
                     <h2 className='text-6xl font-bold text-center uppercase'>ONE SINGLE PLAN FOR ALL YOUR</h2>
                     <h2 className='text-6xl font-bold mt-4 mb-8 text-center uppercase'>DESIGN & CONTENT NEEDS.</h2>
