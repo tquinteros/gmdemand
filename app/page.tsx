@@ -1,3 +1,4 @@
+import ClientsTemplate from "@/src/components/ClientsTemplate/ClientsTemplate";
 import GmText from "@/src/components/GmText/GmText";
 import Hero from "@/src/components/Hero/Hero";
 import PricingTemplate from "@/src/components/PricingTemplate/PricingTemplate";
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <SolutionsTemplate />
       <GmText />
+      <ClientsTemplate />
       <WorksTemplate />
       <PricingTemplate />
     </main>
