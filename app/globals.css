@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-button {
+    background: rgb(185, 144, 237);
+    background: linear-gradient(90deg, rgba(185, 144, 237, 1) 0%, rgba(113, 196, 199, 1) 50%, rgba(149, 242, 20, 1) 100%);
+}
