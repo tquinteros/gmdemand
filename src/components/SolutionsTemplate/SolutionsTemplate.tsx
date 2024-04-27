@@ -8,8 +8,8 @@ const SolutionsTemplate = () => {
     return (
         <div className='min-h-screen relative'>
             <div className='mt-18 md:mt-48'>
-                <h2 className='text-5xl mt-4 mb-4 text-center uppercase'>We provide clients with</h2>
-                <h2 className='text-5xl font-bold mb-8 text-center uppercase'>end to end solutions</h2>
+                <h2 className='text-5xl mt-4 mb-4 text-center'>We provide clients with</h2>
+                <h2 className='text-5xl font-bold mb-8 text-center'>end to end solutions</h2>
             </div>
             <div className='bg-[#F5F5F5] md:mt-28 container flex justify-center md:gap-16 md:flex-row flex-wrap flex-col mx-auto rounded-xl'>
                 {

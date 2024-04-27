@@ -8,8 +8,8 @@ const PricingTemplate = () => {
     return (
         <div className='min-h-screen relative'>
             <div className='mt-16 md:mt-32'>
-                <h2 className='text-5xl font-extrabold mt-4 mb-4 text-center uppercase'>Affordable Design</h2>
-                <h2 className='text-5xl font-extrabold mb-8 text-center uppercase'>Subscription for Startups</h2>
+                <h2 className='text-5xl font-extrabold mt-4 mb-4 text-center'>Affordable Design</h2>
+                <h2 className='text-5xl font-extrabold mb-8 text-center'>Subscription for Startups</h2>
                 <p className='text-2xl text-center max-w-xl mx-auto'>Our team previously worked for Meta, Microsoft, Coca-Cola, Cartoon-Network, LG, Levi&apos;s</p>
             </div>
             <div className='flex flex-col md:flex-row md:flex-wrap container mx-auto justify-center gap-10 mt-16'>
