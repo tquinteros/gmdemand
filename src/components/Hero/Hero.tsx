@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useState, useEffect } from 'react'
 import Button from '../Button/Button'
 import BrandsList from '../BrandsList/BrandsList'
 import DotsHero from '../DotsHero/DotsHero'
@@ -6,8 +7,26 @@ import Image from 'next/image'
 
 const Hero = () => {
 
+    const [heroHeight, setHeroHeight] = useState<string>('100vh');
+
+    useEffect(() => {
+        const headerElement = document.getElementById('header');
+        if (headerElement) {
+            const headerHeight = headerElement.clientHeight;
+            setHeroHeight(`calc(100vh - ${headerHeight}px)`);
+            console.log('Altura del header:', headerHeight);
+        }
+    }, []);
+
     return (
-        <div className='relative text-white min-h-screen md:max-h-screen flex justify-center flex-col items-center' style={{ backgroundImage: `url(/background.png)`, backgroundSize: "cover", backgroundPosition: "center" }}>
+        <div className={`relative text-white md:max-h-screen flex justify-center flex-col items-center`}
+            style={{
+                backgroundImage: `url(/background.png)`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                minHeight: heroHeight,
+            }}
+        >
             <div className='h-full flex flex-col items-center my-16 md:my-0 md:mt-48'>
                 <div>
                     <h2 className='text-6xl font-bold text-center uppercase'>ONE SINGLE PLAN FOR ALL YOUR</h2>

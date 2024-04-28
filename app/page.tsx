@@ -1,6 +1,7 @@
 import ClientsTemplate from "@/src/components/ClientsTemplate/ClientsTemplate";
 import FaqsTemplate from "@/src/components/FaqsTemplate/FaqsTemplate";
 import GmText from "@/src/components/GmText/GmText";
+import Header from "@/src/components/Header/Header";
 import Hero from "@/src/components/Hero/Hero";
 import PricingTemplate from "@/src/components/PricingTemplate/PricingTemplate";
 import SolutionsTemplate from "@/src/components/SolutionsTemplate/SolutionsTemplate";
