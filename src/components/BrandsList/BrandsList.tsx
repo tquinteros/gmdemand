@@ -17,7 +17,7 @@ const brands = [
 const BrandsList = () => {
     return (
         <motion.div
-            initial={{ y: 100, opacity: 0 }}
+            initial={{ y: 70, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
             className='mt-auto mb-20 hidden md:block md:relative'>
