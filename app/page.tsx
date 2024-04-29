@@ -8,7 +8,7 @@ import SolutionsTemplate from "@/src/components/SolutionsTemplate/SolutionsTempl
 import WorksTemplate from "@/src/components/WorksTemplate/WorksTemplate";
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="">
       <Hero />
       <SolutionsTemplate />
       <GmText />

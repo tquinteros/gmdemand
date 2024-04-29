@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const PricingTemplate = () => {
     return (
-        <div className='min-h-screen relative'>
+        <section id='pricing' className='min-h-screen relative'>
             <div className='mt-16 md:mt-32'>
                 <h2 className='text-5xl font-extrabold mt-4 mb-4 text-center'>Affordable Design</h2>
                 <h2 className='text-5xl font-extrabold mb-8 text-center'>Subscription for Startups</h2>
@@ -25,7 +25,7 @@ const PricingTemplate = () => {
             <Image src='/balls/pricing/ball1.png' className='-z-50 absolute left-0 -top-32 hidden xl:block' width={260} height={260} alt="Ball 1" />
             <Image src='/balls/pricing/ball2.png' className='-z-40 absolute right-0 top-40 hidden xl:block' width={140} height={140} alt="Ball 1" />
             <Image src='/balls/pricing/ball3.png' className='-z-50 absolute -right-0 -top-32 hidden xl:block' width={400} height={400} alt="Ball 1" />
-        </div>
+        </section>
     )
 }
 

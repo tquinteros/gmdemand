@@ -5,7 +5,7 @@ import WorksCard from '../WorksCard/WorksCard'
 
 const WorksTemplate = () => {
     return (
-        <div className='min-h-screen mt-20 md:mt-0 relative'>
+        <section id="works" className='min-h-screen mt-20 md:mt-0 relative'>
             <div className=''>
                 <h2 className='text-6xl font-bold mb-8 text-center uppercase'>Check our latest work</h2>
             </div>
@@ -23,7 +23,7 @@ const WorksTemplate = () => {
                 <Button className='w-full md:w-[22rem] mx-4 md:mx-0 bg-primary-purple'>SEE MORE WORK</Button>
             </div>
             <Image src='/balls/works/pin.png' className='-z-40 absolute right-0 -top-48 hidden xl:block' width={320} height={320} alt="Cucumber 1" />
-        </div>
+        </section>
     )
 }
 

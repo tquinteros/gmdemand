@@ -4,7 +4,7 @@ import React from 'react'
 
 const ClientsTemplate = () => {
     return (
-        <div className='min-h-screen relative'>
+        <section id="clients" className='min-h-screen relative'>
             <div className=''>
                 <h2 className='text-5xl md:text-6xl font-bold mb-8 text-center uppercase'>Check our happy clients:</h2>
             </div>
@@ -36,7 +36,7 @@ const ClientsTemplate = () => {
                 </div>
             </div>
             <Image src='/balls/clients/clients1.png' className='absolute right-4 -top-64 hidden xl:block' width={400} height={400} alt="Cucumber 1" />
-        </div>
+        </section>
     )
 }
 

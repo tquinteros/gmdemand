@@ -12,7 +12,7 @@ const FaqsTemplate = () => {
     };
 
     return (
-        <div className='bg-[#3a3a3a] mt-20 md:mt-0 relative py-24 px-6 md:px-0 text-white'>
+        <section id="faq" className='bg-[#3a3a3a] mt-20 md:mt-0 relative py-24 px-6 md:px-0 text-white'>
             <div className='container mb-8 mx-auto'>
                 <h3 className='text-3xl'>FAQ</h3>
             </div>
@@ -45,7 +45,7 @@ const FaqsTemplate = () => {
             <Image src='/balls/faq/ball2.png' className='absolute -top-72 right-0 hidden xl:block' width={350} height={350} alt="Ball 1" />
             <Image src='/balls/faq/ball3.png' className='absolute top-12 right-16 hidden xl:block' width={240} height={240} alt="Ball 1" />
             {/* <Image src='/balls/faq/all.png' className='absolute top-12 right-0 hidden xl:block' width={600} height={600} alt="Ball 1" /> */}
-        </div>
+        </section>
     );
 };
 
