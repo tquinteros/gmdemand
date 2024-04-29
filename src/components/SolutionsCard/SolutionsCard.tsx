@@ -17,11 +17,11 @@ const SolutionsCard = ({ number, title, description, image }: SolutionsCardProps
             </div>
             <div className='mt-10 flex flex-col gap-2 items-center'>
                 <div className='flex justify-center items-center bg-black w-8 h-8 rounded-full'>
-                    <h3 className='text-white text-lg font-bold pt-1'>{number}</h3>
+                    <h3 className='text-white nextfont text-lg pb-0.5 font-bold'>{number}</h3>
                 </div>
-                <h4 className='uppercase text-lg font-bold'>{title}</h4>
+                <h4 className='uppercase text-lg nextfont font-bold'>{title}</h4>
                 <div className='max-w-[250px]'>
-                    <p className='text-center md:text-lg text-md'>{description}</p>
+                    <p className='text-center md:text-lg acumin text-md'>{description}</p>
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@ export const solutions = [
     {
         number: 2,
         title: "Fast Turn Around",
-        description: "Receibe your design within two business days on average.",
+        description: "Receive your design within two business days on average.",
         image: "/balls/solutions/folder.png"
     },
     {

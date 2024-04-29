@@ -10,7 +10,18 @@
     font-style: normal;
 }
 
-body {
+@font-face {
+    font-family: 'NextFont';
+    src: url('../font/TheNextFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nextfont {
+    font-family: 'NextFont', sans-serif;
+}
+
+.acumin {
     font-family: 'Acumin', sans-serif;
 }
 

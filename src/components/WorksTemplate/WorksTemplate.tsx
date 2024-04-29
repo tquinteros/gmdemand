@@ -7,7 +7,7 @@ const WorksTemplate = () => {
     return (
         <section id="works" className='min-h-screen mt-20 md:mt-0 relative'>
             <div className=''>
-                <h2 className='text-6xl font-bold mb-8 text-center uppercase'>Check our latest work</h2>
+                <h2 className='text-6xl mb-8 nextfont text-center uppercase'>Check our latest work</h2>
             </div>
             <div className='p-4 md:p-0'>
                 <div className='bg-[#F5F5F5] md:mt-10 px-4 grid grid-cols-12 gap-8 py-8 justify-items-center container mx-auto rounded-xl'>

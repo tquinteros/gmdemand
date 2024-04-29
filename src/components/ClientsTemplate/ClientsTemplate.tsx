@@ -6,7 +6,7 @@ const ClientsTemplate = () => {
     return (
         <section id="clients" className='min-h-screen relative'>
             <div className=''>
-                <h2 className='text-5xl md:text-6xl font-bold mb-8 text-center uppercase'>Check our happy clients:</h2>
+                <h2 className='text-5xl md:text-6xl mb-8 text-center nextfont uppercase'>Check our happy clients:</h2>
             </div>
             <div className='p-4 md:p-0'>
                 <div className='grid grid-cols-12 px-4 container mx-auto py-12 bg-[#F5F5F5] gap-8'>
@@ -27,8 +27,8 @@ const ClientsTemplate = () => {
                         {
                             testimonials.map((testimonial, index) => (
                                 <div key={index} className='flex gap-2 md:gap-0 flex-col'>
-                                    <h3 className='text-2xl'>{testimonial.title}</h3>
-                                    <p className='text-lg font-extrabold uppercase'>{testimonial.name} - {testimonial.company}</p>
+                                    <h3 className='text-2xl acumin'>{testimonial.title}</h3>
+                                    <p className='text-lg nextfont uppercase'>{testimonial.name} - {testimonial.company}</p>
                                 </div>
                             ))
                         }

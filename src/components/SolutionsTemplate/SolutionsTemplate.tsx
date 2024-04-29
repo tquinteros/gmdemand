@@ -7,7 +7,7 @@ import SolutionsCard from '../SolutionsCard/SolutionsCard'
 const SolutionsTemplate = () => {
     return (
         <section id='solutions' className='min-h-screen p-4 md:p-0 relative'>
-            <div className='mt-20 md:mt-48'>
+            <div className='mt-20 acumin md:mt-48'>
                 <h2 className='text-5xl mt-4 mb-4 text-center'>We provide clients with</h2>
                 <h2 className='text-5xl font-bold mb-8 text-center'>end to end solutions</h2>
             </div>

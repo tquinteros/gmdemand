@@ -21,7 +21,7 @@ const Hero = () => {
                 initial={{ opacity: 0, }}
                 animate={{ opacity: 1, }}
                 transition={{ duration: 1 }}
-                className='h-full flex flex-col items-center my-16 md:my-0 md:mt-48'
+                className='h-full flex flex-col items-center my-16 md:my-0'
             >
                 <div>
                     <h2 className='text-5xl md:text-6xl font-bold text-center uppercase'>ONE SINGLE PLAN FOR ALL YOUR</h2>
@@ -31,7 +31,7 @@ const Hero = () => {
                 <Button className='md:mb-28 mb-16 mt-8 w-96 bg-primary-green' size='sm'>SEE PLANS</Button>
                 <DotsHero />
             </motion.div>
-            <BrandsList />
+            {/* <BrandsList /> */}
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
