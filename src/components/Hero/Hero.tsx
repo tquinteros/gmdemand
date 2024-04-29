@@ -4,6 +4,7 @@ import Button from '../Button/Button'
 import BrandsList from '../BrandsList/BrandsList'
 import DotsHero from '../DotsHero/DotsHero'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 const Hero = () => {
 
@@ -13,7 +14,7 @@ const Hero = () => {
         const headerElement = document.getElementById('header');
         if (headerElement) {
             const headerHeight = headerElement.clientHeight;
-            setHeroHeight(`calc(100vh - ${headerHeight}px)`);
+            setHeroHeight(`calc(100vh - 50px)`);
             console.log('Altura del header:', headerHeight);
         }
     }, []);
