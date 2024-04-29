@@ -20,7 +20,7 @@ const SolutionsCard = ({ number, title, description, image }: SolutionsCardProps
                     <h3 className='text-white text-lg font-bold pt-1'>{number}</h3>
                 </div>
                 <h4 className='uppercase text-lg font-bold'>{title}</h4>
-                <div className='md:max-w-[200px] max-w-[250px]'>
+                <div className='max-w-[250px]'>
                     <p className='text-center md:text-lg text-md'>{description}</p>
                 </div>
             </div>
