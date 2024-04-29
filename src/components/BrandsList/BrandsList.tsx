@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
 
@@ -15,7 +16,11 @@ const brands = [
 
 const BrandsList = () => {
     return (
-        <div className='mt-auto mb-20 hidden md:block md:relative'>
+        <motion.div
+            initial={{ y: 70, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            className='mt-auto mb-20 hidden md:block md:relative'>
             <div className='absolute inset-0 bg-[#B990ED] blur-2xl rounded-full'></div>
             <div className='flex flex-wrap relative gap-8 bg-black rounded-full px-10 py-3'>
                 {
@@ -24,7 +29,7 @@ const BrandsList = () => {
                     ))
                 }
             </div>
-        </div>
+        </motion.div>
     )
 }
 
