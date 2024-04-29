@@ -2,7 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+    font-family: 'Acumin';
+    src: url('../font/acumin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Acumin', sans-serif;
+}
+
 .gradient-button {
     background: rgb(185, 144, 237);
     background: linear-gradient(90deg, rgba(185, 144, 237, 1) 0%, rgba(113, 196, 199, 1) 50%, rgba(149, 242, 20, 1) 100%);
+}
+
+@layer utilities {
+    @variants responsive {
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(65, 65, 65);
 }

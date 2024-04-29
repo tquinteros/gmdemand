@@ -33,7 +33,7 @@ const Hero = () => {
                     <h2 className='text-6xl font-bold mt-4 mb-8 text-center uppercase'>DESIGN & CONTENT NEEDS.</h2>
                 </div>
                 <p className='text-2xl text-center'>We specialize in building brands and delivering high-quality designs fast. </p>
-                <Button className='md:mb-28 mb-16 mt-8 w-96 bg-primary-green' color='primary' size='sm'>SEE PLANS</Button>
+                <Button className='md:mb-28 mb-16 mt-8 w-96 bg-primary-green' size='sm'>SEE PLANS</Button>
                 <DotsHero />
             </div>
             <BrandsList />
