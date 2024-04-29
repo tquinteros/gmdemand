@@ -25,9 +25,9 @@ const ClientsTemplate = () => {
                 <div className='col-span-12 md:pl-12 md:col-span-6 flex justify-center flex-col gap-6'>
                     {
                         testimonials.map((testimonial, index) => (
-                            <div key={index} className='flex flex-col'>
+                            <div key={index} className='flex gap-2 md:gap-0 flex-col'>
                                 <h3 className='text-2xl'>{testimonial.title}</h3>
-                                <p className='text-lg font-bold uppercase'>{testimonial.name} - {testimonial.company}</p>
+                                <p className='text-lg font-extrabold uppercase'>{testimonial.name} - {testimonial.company}</p>
                             </div>
                         ))
                     }
