@@ -7,13 +7,13 @@ const DotsHero = () => {
                 <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="8.5" cy="8.5" r="8.5" fill="#95F214" />
                 </svg>
-                <p>No hiring headaches</p>
+                <p className='pt-[3px]'>No hiring headaches</p>
             </div>
             <div className='flex items-center gap-3 col-span-12 md:col-span-4'>
                 <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="8.5" cy="8.5" r="8.5" fill="#95F214" />
                 </svg>
-                <p>No hiring headaches</p>
+                <p className='pt-[3px]'>No hiring headaches</p>
             </div>
             <div className='flex items-center gap-3 col-span-12 md:col-span-4'>
                 <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">

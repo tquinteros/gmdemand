@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Button from '../Button/Button'
 import BrandsList from '../BrandsList/BrandsList'
 import DotsHero from '../DotsHero/DotsHero'
@@ -8,24 +8,13 @@ import { motion } from 'framer-motion'
 
 const Hero = () => {
 
-    const [heroHeight, setHeroHeight] = useState<string>('100vh');
-
-    useEffect(() => {
-        const headerElement = document.getElementById('header');
-        if (headerElement) {
-            const headerHeight = headerElement.clientHeight;
-            setHeroHeight(`calc(100vh - 50px)`);
-            console.log('Altura del header:', headerHeight);
-        }
-    }, []);
-
     return (
         <div className={`relative text-white md:max-h-screen flex justify-center flex-col items-center`}
             style={{
                 backgroundImage: `url(/background.png)`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                minHeight: heroHeight,
+                minHeight: `calc(100vh - 50px)`,
             }}
         >
             <div className='h-full flex flex-col items-center my-16 md:my-0 md:mt-48'>
