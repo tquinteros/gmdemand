@@ -1,12 +1,13 @@
 "use client"
 import { AnimatePresence, motion } from 'framer-motion'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-scroll'
 
 const Header = () => {
 
     const [showMenu, setShowMenu] = useState(false);
+    const menuRef = useRef<HTMLDivElement | null>(null);
 
     const handleLogoClick = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -20,6 +21,27 @@ const Header = () => {
         setShowMenu(false);
     }
 
+    const closeMenuOnOutsideClick = (e: MouseEvent) => {
+        if (
+            menuRef.current &&
+            e.target instanceof Node &&
+            !menuRef.current.contains(e.target)
+        ) {
+            setShowMenu(false);
+        }
+    };
+
+    useEffect(() => {
+        if (showMenu) {
+            document.addEventListener("click", closeMenuOnOutsideClick);
+        } else {
+            document.removeEventListener("click", closeMenuOnOutsideClick);
+        }
+        return () => {
+            document.removeEventListener("click", closeMenuOnOutsideClick);
+        };
+    }, [showMenu]);
+
     return (
         <header id='header' className='sticky top-0 z-[999] bg-white'>
             <nav className='flex py-3 md:px-16 lg:px-24 px-3 justify-between items-center'>
@@ -31,6 +53,7 @@ const Header = () => {
                     {
                         showMenu && (
                             <motion.div
+                                ref={menuRef}
                                 initial={{ opacity: 0, x: 300 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 exit={{ opacity: 0, x: 300 }}
