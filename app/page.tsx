@@ -1,5 +1,6 @@
 import ClientsTemplate from "@/src/components/ClientsTemplate/ClientsTemplate";
 import FaqsTemplate from "@/src/components/FaqsTemplate/FaqsTemplate";
+import Footer from "@/src/components/Footer/Footer";
 import GmText from "@/src/components/GmText/GmText";
 import Header from "@/src/components/Header/Header";
 import Hero from "@/src/components/Hero/Hero";
@@ -19,6 +20,7 @@ export default function Home() {
       <WorksTemplate />
       <PricingTemplate />
       <FaqsTemplate />
+      <Footer />
     </main>
   );
 }

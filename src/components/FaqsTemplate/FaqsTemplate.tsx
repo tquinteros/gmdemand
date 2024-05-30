@@ -17,18 +17,21 @@ const FaqsTemplate = () => {
                 <h3 className='text-3xl'>FAQ</h3>
             </div>
             <div className='grid grid-cols-12 container mx-auto'>
-                <div className='flex md:col-span-7 col-span-12 flex-col gap-8'>
+                <div className='flex z-50 md:col-span-7  col-span-12 flex-col gap-8'>
                     {faqs.map((faq, index) => (
-                        <div key={index}>
+                        <div className='border-b border-white' key={index}>
                             <motion.div
-                                className='flex justify-between items-center border-b border-white py-2 cursor-pointer'
+                                className='flex justify-between items-center py-2 cursor-pointer'
                                 onClick={() => handleToggle(index)}
                             >
-                                <h4 className='font-bold'>· {faq.question}</h4>
+                                <div className='flex gap-2 items-center'>
+                                    <Image src="/arrow.svg" width={20} height={20} alt="Arrow" className={`transform duration-300 ${openIndex === index ? 'rotate-180' : 'rotate-0'}`} />
+                                    <h4 className='font-bold'>{faq.question}</h4>
+                                </div>
                             </motion.div>
                             {openIndex === index && (
                                 <motion.p
-                                    className='py-2 border-b border-white '
+                                    className='py-2'
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     transition={{ duration: 0.3 }}
