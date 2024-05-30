@@ -21,7 +21,7 @@ const ClientsTemplate = () => {
                             </div>
                             <div className='relative'>
                                 <Image src='/balls/clients/girl.png' width={240} height={240} className='z-10 relative' alt="KIM CURRIER" />
-                                <Image src='/balls/clients/bg2.png' width={240} height={240} className='absolute bottom-0' alt="Background for KIM CURRIER" />
+                                <Image src='/balls/clients/bgguy.png' width={240} height={240} className='absolute bottom-0' alt="Background for KIM CURRIER" />
                             </div>
                         </div>
                     </div>
