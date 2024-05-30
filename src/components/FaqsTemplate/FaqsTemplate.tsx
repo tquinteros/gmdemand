@@ -17,7 +17,7 @@ const FaqsTemplate = () => {
                 <h3 className='text-3xl'>FAQ</h3>
             </div>
             <div className='grid grid-cols-12 container mx-auto'>
-                <div className='flex z-50 md:col-span-7  col-span-12 flex-col gap-8'>
+                <div className='flex z-50 md:col-span-7 col-span-12 flex-col gap-10'>
                     {faqs.map((faq, index) => (
                         <div className='border-b border-white' key={index}>
                             <motion.div
