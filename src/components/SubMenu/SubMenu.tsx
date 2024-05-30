@@ -1,8 +1,10 @@
 "use client"
 
+import { subMenuItems } from '@/data/submenu';
 import Image from 'next/image';
 import React from 'react';
 import { Link } from 'react-scroll';
+import Button from '../Button/Button';
 
 const SubMenu = () => {
 
@@ -12,22 +14,21 @@ const SubMenu = () => {
 
     return (
         <div
-            className='bottom-16 fixed z-[9999] w-[50%] md:w-[40%] lg:w-[35%] left-1/2 -translate-x-1/2'>
-            <div className='absolute inset-0 bg-[#B990ED] blur-2xl rounded-full'></div>
-            <div className='flex items-center justify-between md:gap-12 relative text-white bg-black rounded-full px-8 py-4'>
-                <div className='flex gap-2 items-center cursor-pointer hover:opacity-75 duration-300' onClick={handleLogoClick}>
-                    <h3 className='text-3xl'>GM</h3>
-                    <div className='w-0.5 h-10 ml-3 bg-white hidden md:block'></div>
+            className='bottom-16 fixed z-[9999] left-1/2 -translate-x-1/2'>
+            <div className='absolute inset-0 bg-primary-green blur-md opacity-75 rounded-full'></div>
+            <div className='flex border border-[#444247] relative text-white bg-black rounded-full pr-2 py-2'>
+                <div className='flex items-center justify-between md:gap-12 relative text-white bg-black rounded-full px-12'>
+                    <div className='w-0.5 h-10 block md:hidden bg-white'></div>
+                    <Image src='/menu.svg' alt='menu' width={36} height={36} className='block md:hidden cursor-pointer hover:opacity-75 filter invert duration-300' />
+                    <div className='md:flex-1 md:gap-12 md:justify-between md:flex hidden'>
+                        {
+                            subMenuItems.map((item, index) => (
+                                <Link key={index} to={item.to} spy={true} smooth={true} offset={-70} duration={500} className='cursor-pointer hover:opacity-75 duration-300 text-xl'>{item.label}</Link>
+                            ))
+                        }
+                    </div>
                 </div>
-                <div className='w-0.5 h-10 block md:hidden bg-white'></div>
-                <Image src='/menu.svg' alt='menu' width={36} height={36} className='block md:hidden cursor-pointer hover:opacity-75 filter invert duration-300' />
-                <div className='md:flex-1 md:justify-between md:flex hidden'>
-                    <Link to="solutions" spy={true} smooth={true} offset={-70} duration={500} className='cursor-pointer hover:opacity-75 duration-300 text-xl'>Solutions</Link>
-                    <Link to="clients" spy={true} smooth={true} offset={-70} duration={500} className='cursor-pointer hover:opacity-75 duration-300 text-xl'>Clients</Link>
-                    <Link to="works" spy={true} smooth={true} offset={-70} duration={500} className='cursor-pointer hover:opacity-75 duration-300 text-xl'>Works</Link>
-                    <Link to="pricing" spy={true} smooth={true} offset={-70} duration={500} className='cursor-pointer hover:opacity-75 duration-300 text-xl'>Pricing</Link>
-                    <Link to="faq" spy={true} smooth={true} offset={-70} duration={500} className='cursor-pointer hover:opacity-75 duration-300 text-xl'>FAQ&apos;s</Link>
-                </div>
+                <Button onClick={() => console.log("this is juanfer")} className='bg-primary-green border border-[#444247] px-4' size='xl'>GET STARTED</Button>
             </div>
         </div>
     );
