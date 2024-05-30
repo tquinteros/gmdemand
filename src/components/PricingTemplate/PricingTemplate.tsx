@@ -8,18 +8,18 @@ const PricingTemplate = () => {
     return (
         <section id='pricing' className='min-h-screen relative'>
             <div className='mt-16 acumin md:mt-32'>
-                <h2 className='text-[64px] font-extrabold mt-4 text-center'>Affordable Design</h2>
-                <h2 className='text-[64px] font-extrabold mb-8 text-center'>Subscription for Startups</h2>
-                <p className='text-2xl text-center max-w-xl mx-auto'>Our team previously worked for Meta, Microsoft, Coca-Cola, Cartoon-Network, LG, Levi&apos;s</p>
+                <h2 className='text-[64px] acumin font-extrabold mt-4 -mb-2 text-center'>Great Design</h2>
+                <h2 className='text-[64px] acumin font-extrabold text-center'>Subscription for Startups</h2>
+                {/* <p className='text-2xl text-center max-w-xl mx-auto'>Our team previously worked for Meta, Microsoft, Coca-Cola, Cartoon-Network, LG, Levi&apos;s</p> */}
             </div>
             <div className='flex flex-col md:flex-row md:flex-wrap container mx-auto justify-center gap-10 mt-16'>
                 {
                     dataPricing.map((pricing) => (
-                        <PricingCard color={pricing.color} key={pricing.title} title={pricing.title} price={pricing.price} features={pricing.features} />
+                        <PricingCard mostPopular={pricing.mostPopular} color={pricing.color} key={pricing.title} title={pricing.title} price={pricing.price} features={pricing.features} />
                     ))
                 }
             </div>
-            <div className='flex justify-center mt-8'>
+            <div className='flex justify-center mt-10'>
                 <Button className='w-[22rem] px-0 bg-primary-purple'>BOOK A CALL</Button>
             </div>
             <Image src='/balls/pricing/ball1.png' className='-z-50 absolute left-0 -top-32 hidden xl:block' width={260} height={260} alt="Ball 1" />

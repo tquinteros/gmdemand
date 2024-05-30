@@ -3,13 +3,13 @@ export const solutions = [
         number: 1,
         title: "Easy Kick Off",
         description: "Suscribe to a plan & request as many designs as you'd like.",
-        image: "/balls/solutions/arrows.png"
+        image: "/balls/solutions/kickoff.png"
     },
     {
         number: 2,
         title: "Fast Turn Around",
         description: "Receive your design within two business days on average.",
-        image: "/balls/solutions/folder.png"
+        image: "/balls/solutions/fast.png"
     },
     {
         number: 3,

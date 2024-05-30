@@ -60,11 +60,11 @@ const Header = () => {
                                 transition={{ duration: 0.6 }}
                                 className='w-[300px] border-2 border-black h-[95vh] absolute -right-0.5 z-[999] top-[3.10rem] bg-white'>
                                 <ul className='flex px-4 flex-col items-center justify-center h-[95vh] gap-12'>
-                                    <Link onClick={handleCloseMenu} to="solutions" spy={true} smooth={true} offset={-70} duration={500} className='cursor-pointer hover:opacity-75 duration-300 text-2xl'>Solutions</Link>
+                                    <Link onClick={handleCloseMenu} to="solutions" spy={true} smooth={true} offset={-70} duration={500} className='cursor-pointer hover:opacity-75 duration-300 text-2xl'>How it works</Link>
                                     <div className='h-0.5 bg-black w-full'></div>
-                                    <Link onClick={handleCloseMenu} to="clients" spy={true} smooth={true} offset={-70} duration={500} className='cursor-pointer hover:opacity-75 duration-300 text-2xl'>Clients</Link>
+                                    <Link onClick={handleCloseMenu} to="clients" spy={true} smooth={true} offset={-70} duration={500} className='cursor-pointer hover:opacity-75 duration-300 text-2xl'>Benefits</Link>
                                     <div className='h-0.5 bg-black w-full'></div>
-                                    <Link onClick={handleCloseMenu} to="works" spy={true} smooth={true} offset={-70} duration={500} className='cursor-pointer hover:opacity-75 duration-300 text-2xl'>Works</Link>
+                                    <Link onClick={handleCloseMenu} to="works" spy={true} smooth={true} offset={-70} duration={500} className='cursor-pointer hover:opacity-75 duration-300 text-2xl'>Service</Link>
                                     <div className='h-0.5 bg-black w-full'></div>
                                     <Link onClick={handleCloseMenu} to="pricing" spy={true} smooth={true} offset={-70} duration={500} className='cursor-pointer hover:opacity-75 duration-300 text-2xl'>Pricing</Link>
                                     <div className='h-0.5 bg-black w-full'></div>
