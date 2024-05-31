@@ -11,12 +11,12 @@ const ClientsTemplate = () => {
             <div className='p-4 md:p-0'>
                 <div className='grid grid-cols-12 p-5 container mx-auto bg-[#F5F5F5] gap-8'>
                     <div className='col-span-12 md:col-span-6 flex flex-col gap-8 pt-8 rounded-lg bg-white'>
-                        <h3 className='text-4xl px-10'>Working with GM has been a game-changer for our projects. Their exceptional quality of work combined with their incredibly fast turnaround time makes them the best design agency.</h3>
+                        <h3 className='text-2xl md:text-4xl px-4 md:px-10'>Working with GM has been a game-changer for our projects. Their exceptional quality of work combined with their incredibly fast turnaround time makes them the best design agency.</h3>
                         <div className='mt-auto flex justify-between pl-10'>
                             <div className='flex justify-end pb-6 flex-col'>
                                 <h3 className='text-lg text-[#B990ED] font-extrabold'>KIM CURRIER</h3>
                                 <div className='max-w-48'>
-                                    <h3 className='text-lg italic acumin max-w-sm'>Head of Marketing Decentraland</h3>
+                                    <h3 className='text-md md:text-lg italic acumin max-w-sm'>Head of Marketing Decentraland</h3>
                                 </div>
                             </div>
                             <div className='relative'>
@@ -29,9 +29,9 @@ const ClientsTemplate = () => {
                         {
                             testimonials.map((testimonial, index) => (
                                 <div key={index} className='flex max-w-xl gap-2 md:gap-0 flex-col'>
-                                    <h3 className='text-2xl acumin font-bold'>{testimonial.title}</h3>
+                                    <h3 className='text-xl md:text-2xl acumin font-bold'>{testimonial.title}</h3>
                                     {/* <p className='text-lg acumin'>{testimonial.name} - {testimonial.company}</p> */}
-                                    <p className='text-2xl acumin'>{testimonial.description}</p>
+                                    <p className='text-xl md:text-2xl acumin'>{testimonial.description}</p>
                                 </div>
                             ))
                         }

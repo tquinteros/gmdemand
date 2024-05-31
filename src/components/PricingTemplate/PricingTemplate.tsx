@@ -12,7 +12,7 @@ const PricingTemplate = () => {
                 <h2 className='text-[64px] acumin font-extrabold text-center'>Subscription for Startups</h2>
                 {/* <p className='text-2xl text-center max-w-xl mx-auto'>Our team previously worked for Meta, Microsoft, Coca-Cola, Cartoon-Network, LG, Levi&apos;s</p> */}
             </div>
-            <div className='flex flex-col md:flex-row md:flex-wrap container mx-auto justify-center gap-10 mt-16'>
+            <div className='flex flex-col p-4 md:p-0 md:flex-row md:flex-wrap container mx-auto justify-center gap-20 md:gap-10 mt-16'>
                 {
                     dataPricing.map((pricing) => (
                         <PricingCard mostPopular={pricing.mostPopular} color={pricing.color} key={pricing.title} title={pricing.title} price={pricing.price} features={pricing.features} />

@@ -12,7 +12,7 @@ import WorksTemplate from "@/src/components/WorksTemplate/WorksTemplate";
 export default function Home() {
   return (
     <main className="relative !overflow-x-hidden">
-      {/* <SubMenu />
+      <SubMenu />
       <Hero />
       <SolutionsTemplate />
       <GmText />
@@ -20,7 +20,7 @@ export default function Home() {
       <WorksTemplate />
       <PricingTemplate />
       <FaqsTemplate />
-      <Footer /> */}
+      <Footer />
     </main>
   );
 }
