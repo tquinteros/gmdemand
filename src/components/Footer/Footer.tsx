@@ -30,7 +30,7 @@ const Footer = () => {
                 <div>
                     <Image src="/logofooter.png" alt="Logo" width={320} height={320} />
                 </div>
-                <div className='flex justify-between md:justify-start'>
+                <div className='flex justify-between md:gap-6 md:justify-start'>
                     <Image className='hover:opacity-75 duration-300 cursor-pointer' src="/social/instagram.svg" alt="Socials" width={56} height={56} />
                     <Image className='hover:opacity-75 duration-300 cursor-pointer' src="/social/mail.svg" alt="Socials" width={56} height={56} />
                     <Image className='hover:opacity-75 duration-300 cursor-pointer' src="/social/linkedin.svg" alt="Socials" width={56} height={56} />

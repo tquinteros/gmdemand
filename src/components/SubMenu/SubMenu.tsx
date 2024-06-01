@@ -14,7 +14,7 @@ const SubMenu = () => {
 
     return (
         <div
-            className='lg:block hidden bottom-16 fixed z-[9999] left-1/2 -translate-x-1/2'>
+            className='lg:block hidden bottom-16 fixed z-[999] left-1/2 -translate-x-1/2'>
             <div className='absolute inset-0 bg-primary-green blur-md opacity-75 rounded-full'></div>
             <div className='flex border border-[#444247] relative text-white bg-black rounded-full pr-2 py-2'>
                 <div className='flex items-center justify-between md:gap-12 relative text-white bg-black rounded-full px-12'>
