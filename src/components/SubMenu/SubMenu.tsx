@@ -14,12 +14,10 @@ const SubMenu = () => {
 
     return (
         <div
-            className='md:block hidden bottom-16 fixed z-[9999] left-1/2 -translate-x-1/2'>
+            className='lg:block hidden bottom-16 fixed z-[9999] left-1/2 -translate-x-1/2'>
             <div className='absolute inset-0 bg-primary-green blur-md opacity-75 rounded-full'></div>
             <div className='flex border border-[#444247] relative text-white bg-black rounded-full pr-2 py-2'>
                 <div className='flex items-center justify-between md:gap-12 relative text-white bg-black rounded-full px-12'>
-                    <div className='w-0.5 h-10 block md:hidden bg-white'></div>
-                    <Image src='/menu.svg' alt='menu' width={36} height={36} className='block md:hidden cursor-pointer hover:opacity-75 filter invert duration-300' />
                     <div className='md:flex-1 md:gap-12 md:justify-between md:flex hidden'>
                         {
                             subMenuItems.map((item, index) => (
@@ -28,7 +26,7 @@ const SubMenu = () => {
                         }
                     </div>
                 </div>
-                <Button onClick={() => console.log("this is juanfer")} className='bg-primary-green border border-[#444247] px-4' size='xl'>GET STARTED</Button>
+                <Button onClick={() => console.log("this is juanfer")} className='bg-primary-green border border-[#444247] w-64 2xl:w-fit px-4' size='xl'>GET STARTED</Button>
             </div>
         </div>
     );

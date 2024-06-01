@@ -11,7 +11,7 @@ interface SolutionsCardProps {
 
 const SolutionsCard = ({ number, title, description, image }: SolutionsCardProps) => {
     return (
-        <div className='flex my-8 flex-col items-center justify-center'>
+        <div className='flex lg:col-span-4 md:col-span-6 col-span-12 my-8 flex-col items-center justify-center'>
             <div className='relative flex items-center justify-center w-36 h-36 bg-white rounded-full'>
                 <Image src={image} width={number === 2 ? 132 : 100} height={100} alt={title} />
             </div>

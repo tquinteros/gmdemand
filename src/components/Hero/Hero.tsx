@@ -24,8 +24,8 @@ const Hero = () => {
                 className='h-full flex flex-col items-center my-16 md:my-0'
             >
                 <div>
-                    <h2 className='text-5xl md:text-6xl font-bold text-center uppercase'>ONE SINGLE PLAN FOR ALL YOUR</h2>
-                    <h2 className='text-5xl md:text-6xl font-bold mt-4 mb-8 text-center uppercase'>DESIGN & CONTENT NEEDS.</h2>
+                    <h2 className='text-5xl lg:text-6xl font-bold text-center uppercase'>ONE SINGLE PLAN FOR ALL YOUR</h2>
+                    <h2 className='text-5xl lg:text-6xl font-bold mt-4 mb-8 text-center uppercase'>DESIGN & CONTENT NEEDS.</h2>
                 </div>
                 <p className='text-2xl text-center'>We specialize in building brands and delivering high-quality designs fast. </p>
                 <Button className='md:mb-28 mb-16 mt-8 w-96 bg-primary-green' size='sm'>SEE PLANS</Button>
