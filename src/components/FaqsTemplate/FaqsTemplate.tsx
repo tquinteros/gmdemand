@@ -12,7 +12,7 @@ const FaqsTemplate = () => {
     };
 
     return (
-        <section id="faq" className='bg-[#3a3a3a] acumin mt-20 md:mt-0 relative py-24 px-6 md:px-0 text-white'>
+        <section id="faq" className='bg-[#3a3a3a] acumin relative py-24 px-6 xl:px-0 text-white'>
             <div className='container mb-8 mx-auto'>
                 <h3 className='text-3xl'>FAQ</h3>
             </div>

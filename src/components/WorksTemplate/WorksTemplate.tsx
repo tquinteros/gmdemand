@@ -5,7 +5,7 @@ import WorksCard from '../WorksCard/WorksCard'
 
 const WorksTemplate = () => {
     return (
-        <section id="works" className='min-h-screen mt-20 md:mt-0 relative'>
+        <section id="works" className='min-h-screen relative'>
             <div className=''>
                 <h2 className='text-6xl mb-8 nextfont text-center uppercase'>Check our latest work</h2>
             </div>

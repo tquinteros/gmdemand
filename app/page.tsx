@@ -11,7 +11,7 @@ import WorksTemplate from "@/src/components/WorksTemplate/WorksTemplate";
 
 export default function Home() {
   return (
-    <main className="relative !overflow-x-hidden">
+    <main className="relative flex flex-col gap-32 !overflow-x-hidden">
       <SubMenu />
       <Hero />
       <SolutionsTemplate />
@@ -19,8 +19,10 @@ export default function Home() {
       <ClientsTemplate />
       <WorksTemplate />
       <PricingTemplate />
-      <FaqsTemplate />
-      <Footer />
+      <div>
+        <FaqsTemplate />
+        <Footer />
+      </div>
     </main>
   );
 }
