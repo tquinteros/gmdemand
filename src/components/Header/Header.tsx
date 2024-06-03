@@ -31,17 +31,23 @@ const Header = () => {
         }
     };
 
+    const handleEscapeKey = (e: KeyboardEvent) => {
+        if (e.key === 'Escape') {
+            setShowMenu(false);
+        }
+    };
+
     useEffect(() => {
         if (showMenu) {
-            document.body.style.overflow = 'hidden';
             document.addEventListener("click", closeMenuOnOutsideClick);
+            document.addEventListener("keydown", handleEscapeKey);
         } else {
-            document.body.style.overflow = 'auto';
             document.removeEventListener("click", closeMenuOnOutsideClick);
+            document.removeEventListener("keydown", handleEscapeKey);
         }
         return () => {
-            document.body.style.overflow = 'auto';
             document.removeEventListener("click", closeMenuOnOutsideClick);
+            document.removeEventListener("keydown", handleEscapeKey);
         };
     }, [showMenu]);
 
