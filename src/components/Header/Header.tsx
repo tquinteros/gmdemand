@@ -6,7 +6,7 @@ import { Link } from 'react-scroll'
 import Button from '../Button/Button'
 
 const Header = () => {
-    const [showMenu, setShowMenu] = useState(true);
+    const [showMenu, setShowMenu] = useState(false);
     const menuRef = useRef<HTMLDivElement | null>(null);
 
     const handleLogoClick = () => {

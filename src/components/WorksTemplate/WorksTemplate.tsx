@@ -10,7 +10,7 @@ const WorksTemplate = () => {
                 <h2 className='text-6xl mb-8 nextfont text-center uppercase'>Check our latest work</h2>
             </div>
             <div className='p-4 md:p-0'>
-                <div className='bg-[#F5F5F5] md:mt-10 px-4 grid grid-cols-12 gap-8 py-8 justify-items-center container mx-auto rounded-xl'>
+                <div className='bg-[#F5F5F5] md:mt-10 md:px-4 grid grid-cols-12 gap-8 py-8 justify-items-center container mx-auto rounded-xl'>
                     <WorksCard src='/balls/works/roland.png' />
                     <WorksCard src="/balls/works/mvmf.png" />
                     <WorksCard src="/balls/works/indiesquare.png" />

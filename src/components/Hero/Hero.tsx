@@ -21,7 +21,7 @@ const Hero = () => {
                 initial={{ opacity: 0, }}
                 animate={{ opacity: 1, }}
                 transition={{ duration: 1 }}
-                className='h-full flex flex-col items-center my-16 z-[999] md:my-0'
+                className='h-full flex flex-col items-center my-16 z-[100] md:my-0'
             >
                 <div>
                     <h2 className='text-5xl lg:text-6xl font-bold text-center uppercase'>ONE SINGLE PLAN FOR ALL YOUR</h2>
