@@ -1,6 +1,6 @@
 export const subMenuItems = [
     {
-        label: 'How it works',
+        label: 'Solutions',
         to: 'solutions'
     },
     {
